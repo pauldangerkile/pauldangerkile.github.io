@@ -26,10 +26,115 @@
 		/>
 	</head>
 	<body onload="selectTheme('darkly')">
-		<nav class="navbar navbar-expand-md bg-primary navbar-dark fixed-left">
+		<!--
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a
+					class="navbar-brand"
+					href="#"
+					>Navbar</a
+				>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div
+					class="collapse navbar-collapse"
+					id="navbarSupportedContent"
+				>
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a
+								class="nav-link active"
+								aria-current="page"
+								href="#"
+								>Home</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="#"
+								>Link</a
+							>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="navbarDropdown"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Dropdown
+							</a>
+							<ul
+								class="dropdown-menu"
+								aria-labelledby="navbarDropdown"
+							>
+								<li
+									><a
+										class="dropdown-item"
+										href="#"
+										>Action</a
+									></li
+								>
+								<li
+									><a
+										class="dropdown-item"
+										href="#"
+										>Another action</a
+									></li
+								>
+								<li><hr class="dropdown-divider" /></li>
+								<li
+									><a
+										class="dropdown-item"
+										href="#"
+										>Something else here</a
+									></li
+								>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link disabled"
+								href="#"
+								tabindex="-1"
+								aria-disabled="true"
+								>Disabled</a
+							>
+						</li>
+					</ul>
+					<form class="d-flex">
+						<input
+							class="form-control me-2"
+							type="search"
+							placeholder="Search"
+							aria-label="Search"
+						/>
+						<button
+							class="btn btn-outline-success"
+							type="submit"
+							>Search</button
+						>
+					</form>
+				</div>
+			</div>
+		</nav>
+	-->
+		<nav class="navbar navbar-expand-md navbar-dark bg-primary">
 			<a
 				class="navbar-brand"
-				href
+				href="#"
 				>Paul Danger Kile</a
 			>
 			<button
@@ -43,43 +148,7 @@
 			>
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<br />&nbsp;<br />
-			<label>Menu Position:&nbsp;</label>
-			<div
-				class="btn-group-sm"
-				role="group"
-				aria-label="Where do you want the toolbar?"
-			>
-				<button
-					type="button"
-					data-class="fixed-left"
-					class="btn btn-primary"
-					>Left</button
-				>
-				<button
-					type="button"
-					data-class="fixed-right"
-					class="btn btn-primary"
-					>Right</button
-				>
-				<!--
-				<button
-					type="button"
-					data-class="fixed-top"
-					class="btn btn-primary"
-					>Top</button
-				>
-				-->
-			</div>
-			<br />&nbsp;<br />
-			<label>Theme:&nbsp;</label>
-			<select
-				class="form-control width-md"
-				id="theme_select"
-				onchange="selectTheme(value)"
-			></select>
-			<br />&nbsp;<br />
-			<label>Links (may require login):&nbsp;</label>
+
 			<div
 				class="collapse navbar-collapse"
 				id="navbarsExampleDefault"
@@ -205,6 +274,43 @@
 			<div class="card">
 				<div class="card-body">
 					<h1 class="text-center">dangerismymiddlename.com</h1>
+				</div>
+			</div>
+			<br />
+			<div class="card">
+				<div class="card-body">
+					<label>Menu Position:&nbsp;</label>
+					<div
+						class="btn-group-sm"
+						role="group"
+						aria-label="Where do you want the toolbar?"
+					>
+						<button
+							type="button"
+							data-class="fixed-left"
+							class="btn btn-primary"
+							>Left</button
+						>
+						<button
+							type="button"
+							data-class="fixed-right"
+							class="btn btn-primary"
+							>Right</button
+						>
+						<button
+							type="button"
+							data-class="fixed-top"
+							class="btn btn-primary"
+							>Top</button
+						>
+					</div>
+					<br />
+					<label>Theme:&nbsp;</label>
+					<select
+						class="form-control width-md"
+						id="theme_select"
+						onchange="selectTheme(value)"
+					></select>
 				</div>
 			</div>
 			<br />
