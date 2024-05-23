@@ -1,55 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
+		<meta charset="utf-8" />
 		<meta
 			name="viewport"
-			content="width=device-width, initial-scale=1, shrink-to-fit=no"
-		/>
+			content="width=device-width, initial-scale=1" />
 		<title>dangerismymiddlename.com</title>
 		<link
 			rel="stylesheet"
 			id="theme_link"
-			href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.3/materia/bootstrap.min.css"
-		/>
+			href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.3/darkly/bootstrap.min.css" />
 		<link
 			rel="stylesheet"
-			href="navbar-fixed-right.min.css"
-		/>
+			href="navbar-fixed-right.min.css" />
 		<link
 			rel="stylesheet"
-			href="navbar-fixed-left.min.css"
-		/>
+			href="navbar-fixed-left.min.css" />
 		<link
 			rel="stylesheet"
-			href="docs.css"
-		/>
+			href="docs.css" />
 	</head>
-	<body onload="selectTheme('darkly')">
-		<!--
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<div class="container-fluid">
-				<a
-					class="navbar-brand"
-					href="#"
-					>Navbar</a
-				>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
+	<body>
+		<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+			<a
+				class="navbar-brand"
+				href="#"
+				>&nbsp;Paul Danger Kile&nbsp;</a
+			>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-bs-toggle="collapse"
+				data-bs-target="#navbarTogglerDemo02"
+				aria-controls="navbarTogglerDemo02"
+				aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div
+				class="collapse navbar-collapse"
+				id="navbarTogglerDemo02">
+				<br />&nbsp;
+				<label>&nbsp;Menu Position:&nbsp;</label>
 				<div
-					class="collapse navbar-collapse"
-					id="navbarSupportedContent"
-				>
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					class="btn-group-sm"
+					role="group"
+					aria-label="Where do you want the toolbar?">
+					<button
+						type="button"
+						data-class="fixed-left"
+						class="btn btn-primary"
+						>Left</button
+					>
+					<button
+						type="button"
+						data-class="fixed-right"
+						class="btn btn-primary"
+						>Right</button
+					>
+					<button
+						type="button"
+						data-class="fixed-top"
+						class="btn btn-primary"
+						>Top</button
+					>
+				</div>
+				<br />&nbsp;
+				<label>&nbsp;Theme:&nbsp;</label>
+				<select
+					class="form-control width-md"
+					id="theme_select"
+					onchange="selectTheme(value)"></select>
+				<br />&nbsp;
+				<label>&nbsp;Links<br />(may require login):&nbsp;<br /></label>
+				<ul class="navbar-nav">
+					<!--
 						<li class="nav-item">
 							<a
 								class="nav-link active"
@@ -58,102 +83,7 @@
 								>Home</a
 							>
 						</li>
-						<li class="nav-item">
-							<a
-								class="nav-link"
-								href="#"
-								>Link</a
-							>
-						</li>
-						<li class="nav-item dropdown">
-							<a
-								class="nav-link dropdown-toggle"
-								href="#"
-								id="navbarDropdown"
-								role="button"
-								data-bs-toggle="dropdown"
-								aria-expanded="false"
-							>
-								Dropdown
-							</a>
-							<ul
-								class="dropdown-menu"
-								aria-labelledby="navbarDropdown"
-							>
-								<li
-									><a
-										class="dropdown-item"
-										href="#"
-										>Action</a
-									></li
-								>
-								<li
-									><a
-										class="dropdown-item"
-										href="#"
-										>Another action</a
-									></li
-								>
-								<li><hr class="dropdown-divider" /></li>
-								<li
-									><a
-										class="dropdown-item"
-										href="#"
-										>Something else here</a
-									></li
-								>
-							</ul>
-						</li>
-						<li class="nav-item">
-							<a
-								class="nav-link disabled"
-								href="#"
-								tabindex="-1"
-								aria-disabled="true"
-								>Disabled</a
-							>
-						</li>
-					</ul>
-					<form class="d-flex">
-						<input
-							class="form-control me-2"
-							type="search"
-							placeholder="Search"
-							aria-label="Search"
-						/>
-						<button
-							class="btn btn-outline-success"
-							type="submit"
-							>Search</button
-						>
-					</form>
-				</div>
-			</div>
-		</nav>
-	-->
-		<nav class="navbar navbar-expand-md navbar-dark bg-primary">
-			<a
-				class="navbar-brand"
-				href="#"
-				>Paul Danger Kile</a
-			>
-			<button
-				class="navbar-toggler"
-				type="button"
-				data-toggle="collapse"
-				data-target="#navbarsExampleDefault"
-				aria-controls="navbarsExampleDefault"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-			>
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div
-				class="collapse navbar-collapse"
-				id="navbarsExampleDefault"
-			>
-				<ul class="navbar-nav">
+						-->
 					<li class="nav-item"
 						><a
 							class="nav-link"
@@ -274,43 +204,6 @@
 			<div class="card">
 				<div class="card-body">
 					<h1 class="text-center">dangerismymiddlename.com</h1>
-				</div>
-			</div>
-			<br />
-			<div class="card">
-				<div class="card-body">
-					<label>Menu Position:&nbsp;</label>
-					<div
-						class="btn-group-sm"
-						role="group"
-						aria-label="Where do you want the toolbar?"
-					>
-						<button
-							type="button"
-							data-class="fixed-left"
-							class="btn btn-primary"
-							>Left</button
-						>
-						<button
-							type="button"
-							data-class="fixed-right"
-							class="btn btn-primary"
-							>Right</button
-						>
-						<button
-							type="button"
-							data-class="fixed-top"
-							class="btn btn-primary"
-							>Top</button
-						>
-					</div>
-					<br />
-					<label>Theme:&nbsp;</label>
-					<select
-						class="form-control width-md"
-						id="theme_select"
-						onchange="selectTheme(value)"
-					></select>
 				</div>
 			</div>
 			<br />
@@ -450,7 +343,7 @@
 							target="_blank"
 							>bootstrap-navbar-sidebar</a
 						>
-						(<a href="./bootstrap-navbar-sidebar-master/docs/index.html">original implementation</a>) copyright © 2019 Mladen Plavsic, under
+						copyright © 2019 Mladen Plavsic, under
 						<a
 							href="https://en.wikipedia.org/wiki/MIT_License"
 							target="_blank"
@@ -481,26 +374,24 @@
 							>MIT license</a
 						>,
 						<br />
-						and that's a whole lot of copyright and licensing information for a site that's plain HTML, CSS, and a smattering of JavaScript&hellip;
+						and that's a whole lot of copyright and licensing information for a site that's plain HTML, CSS, and a smattering of additional JavaScript&hellip;
 					</div>
 				</div>
 			</footer>
+			<br />
 		</div>
 		<script
 			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 			integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
-			crossorigin="anonymous"
-		></script>
+			crossorigin="anonymous"></script>
 		<script
-			src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.min.js"
-			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-			crossorigin="anonymous"
-		></script>
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"></script>
 		<script src="docs.js"></script>
 		<script
 			async
 			defer
-			src="https://buttons.github.io/buttons.js"
-		></script>
+			src="https://buttons.github.io/buttons.js"></script>
 	</body>
 </html>
