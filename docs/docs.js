@@ -1,5 +1,6 @@
 var themes = [
     'darkly',
+    'lux',
     'slate',
     'superhero'
 ];
