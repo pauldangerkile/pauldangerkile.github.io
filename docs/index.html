@@ -19,6 +19,15 @@
 		<link
 			rel="stylesheet"
 			href="docs.css" />
+		<style>
+			.redbubble-gallery {
+				display: flex;
+				justify-content: center;
+			}
+			.paragraph-text {
+				max-width: 80ch;
+			}
+		</style>
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-md navbar-dark bg-primary">
@@ -167,12 +176,15 @@
 				</div>
 				<br />&nbsp;
 				<label>&nbsp;Theme:&nbsp;</label>
-				<select
-					type="button"
-					class="btn bg-light dropdown-toggle"
-					id="theme_select"
-					onchange="selectTheme(value)"></select
-				><br />&nbsp;
+				<div>
+					<select
+						type="button"
+						class="btn bg-light dropdown-toggle"
+						id="theme_select"
+						onchange="selectTheme(value)">
+					</select>
+				</div>
+				<br />&nbsp;
 				<label>&nbsp;Menu Position:&nbsp;</label>
 				<div
 					class="btn-group-sm"
@@ -209,7 +221,7 @@
 			<br />
 			<div class="card">
 				<div class="card-body">
-					<h2>Now this is just silly&hellip; but true:</h2>
+					<h2>Now this is just silly:</h2>
 					My legal name: Paul Danger Kile<br />
 					My name at birth: William Paul Caligiuri<br />
 					An Italian version of my birth name: Guglielmo Paolo Caligiuri<br />
@@ -221,18 +233,20 @@
 			<div class="card">
 				<div class="card-body">
 					<h2>Where is this thing going?</h2>
-					<p
+					<p class="paragraph-text"
 						>I will repost some projects and writings here, but the news that did not age well, will not return. (Decade
 						old motorcycle racing news, I am looking at you.)
 					</p>
-					<p>Reading blogs is less of a thing than ever, but people still use social media, so:</p>
+					<p class="paragraph-text"
+						>Reading blogs is less of a thing than ever, but people still use social media, so:</p
+					>
 					<ul>
-						<li
+						<li class="paragraph-text"
 							>You will find links to all of my social media accounts on this site's menu. Speaking of which: the "menu
 							position buttons" and "theme dropdown" are kind of neat, because they don't hide the HTML result inside
 							JavaScript or WebAssembly.</li
 						>
-						<li
+						<li class="paragraph-text"
 							>I will begin incorporating my social media feeds directly into this website to whatever extent possible.
 							500px removed access to their API for everyone, so that's a no-go, but some of the others are possible.
 							Could I scrape sites without APIs? Probably. Will I? No.</li
@@ -323,6 +337,28 @@
 						target="_blank"
 						>Deviant Art</a
 					>
+				</div>
+			</div>
+			<br />
+			<div class="card">
+				<div class="card-body">
+					<h2>Random Items From My RedBubble Shop:</h2>
+					<div class="paragraph-text text-bg-danger">
+						<h4
+							>Each image has a wide variety of products and prices. Please ignore the random prices that RedBubble puts
+							on this page.
+						</h4></div
+					>
+					<div class="redbubble-gallery">
+						<script
+							type="text/javascript"
+							src="https://www.redbubble.com/assets/external_portfolio.js"></script>
+						<script
+							id="rb-xzfcxvzx"
+							type="text/javascript">
+							new RBExternalPortfolio("www.redbubble.com", "dangerkile", 5, 3).renderIframe();
+						</script>
+					</div>
 				</div>
 			</div>
 			<br />
