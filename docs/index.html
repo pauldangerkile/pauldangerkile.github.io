@@ -29,7 +29,7 @@
 			}
 		</style>
 	</head>
-	<body>
+	<body oncontextmenu="return false">
 		<nav class="navbar navbar-expand-md navbar-dark bg-primary">
 			<a
 				class="navbar-brand"
@@ -222,11 +222,26 @@
 			<div class="card">
 				<div class="card-body">
 					<h2>Now this is just silly:</h2>
-					My legal name: Paul Danger Kile<br />
-					My name at birth: William Paul Caligiuri<br />
+					Name: Paul Danger Kile<br />
+					Name at birth: William Paul Caligiuri<br />
 					An Italian version of my birth name: Guglielmo Paolo Caligiuri<br />
 					A Japanese version of my legal name: ポール・デンジャー・キレ<br />
-					An anagram of my name: Guardlike Panel<br />
+					An anagram of my legal name: Guardlike Panel<br />
+					<!--
+					<a href="https://clustrmaps.com/site/1bzu3" title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=SZmHFSdRl08UkUykBYdCa5TpDGKRtbODfchzlvZrpts&cl=ffffff"></a>
+					<script
+						type="text/javascript"
+						id="clustrmaps"
+						src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=SZmHFSdRl08UkUykBYdCa5TpDGKRtbODfchzlvZrpts&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff"></script>
+					-->
+				</div>
+			</div>
+			<br />
+			<div class="card">
+				<div class="card-body">
+					<h2>NASA Image Of The Day:</h2>
+					<div id="apod"></div>
+					<script src="apod.js"></script>
 				</div>
 			</div>
 			<br />
@@ -347,8 +362,9 @@
 						<h4
 							>&nbsp;&nbsp;&nbsp;&nbsp;Each image has a wide variety of products and prices.<br />&nbsp;&nbsp;&nbsp;&nbsp;Please
 							ignore the random prices that RedBubble puts on this page.
-						</h4></div
-					>
+						</h4>
+						&nbsp;&nbsp;&nbsp;&nbsp;To-do: replace this automated gallery with my own.
+					</div>
 					<div class="redbubble-gallery">
 						<script
 							type="text/javascript"
@@ -366,24 +382,31 @@
 				<div class="card">
 					<div class="card-body text-center">
 						This site does not use cookies.<br />
-						Words, images, and code, copyright © 2024
+						Words, images, and code, are copyright © 2024
 						<a
 							href="https://www.linkedin.com/in/dangerismymiddlenamedotcom/"
 							target="_blank"
 							>Paul Danger Kile</a
-						>, under the
+						><br />
+						under the
 						<a
 							href="https://en.wikipedia.org/wiki/Apache_License"
 							target="_blank"
 							>Apache 2.0 license</a
-						>, and
+						>, unless otherwise noted, and
+						<br />
+						the
+						<a href="https://blog.devgenius.io/api-calls-in-javascript-fetch-the-universe-with-nasas-api-dc375f32b924"
+							>NASA APOD code example</a
+						>
+						is by <a href="https://medium.com/@calebpr">Caleb</a>, and the
 						<br />
 						<a
 							href="https://github.com/mladenplavsic/bootstrap-navbar-sidebar"
 							target="_blank"
 							>bootstrap-navbar-sidebar</a
 						>
-						copyright © 2019 Mladen Plavsic, under
+						is copyright © 2019 Mladen Plavsic under the
 						<a
 							href="https://en.wikipedia.org/wiki/MIT_License"
 							target="_blank"
@@ -395,7 +418,7 @@
 							target="_blank"
 							>Bootswatch</a
 						>
-						copyright © 2013 Thomas Park, under
+						is copyright © 2013 Thomas Park under the
 						<a
 							href="https://en.wikipedia.org/wiki/MIT_License"
 							target="_blank"
@@ -407,14 +430,14 @@
 							target="_blank"
 							>Bootstrap 5.3.3</a
 						>
-						copyright © 2021 Twitter, under
+						is copyright © 2021 Twitter under the
 						<a
 							href="https://en.wikipedia.org/wiki/MIT_License"
 							target="_blank"
 							>MIT license</a
-						>,
+						>, and
 						<br />
-						and that's a whole lot of copyright and licensing information<br />for a site that's plain HTML, CSS, and a
+						that's a whole lot of copyright and licensing information<br />for a site that's plain HTML, CSS, and a
 						smattering of additional JavaScript&hellip;
 					</div>
 				</div>
