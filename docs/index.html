@@ -230,13 +230,6 @@
 					Italian: Guglielmo Paolo Caligiuri<br />
 					Japanese: ポール・デンジャー・キレ<br />
 					Anagram: Guardlike Panel<br />
-					<!--
-					<a href="https://clustrmaps.com/site/1bzu3" title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=SZmHFSdRl08UkUykBYdCa5TpDGKRtbODfchzlvZrpts&cl=ffffff"></a>
-					<script
-						type="text/javascript"
-						id="clustrmaps"
-						src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=SZmHFSdRl08UkUykBYdCa5TpDGKRtbODfchzlvZrpts&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff"></script> 
-					-->
 				</div>
 			</div>
 			<br />
@@ -275,7 +268,15 @@
 					</div>
 					<h2>NASA Astronomy Photo Of The Day (APOD):</h2>
 					<div id="apod"></div>
-					<script src="apod.js"></script>
+					<script>
+						fetch("https://api.nasa.gov/planetary/apod?api_key=nFIYcpkzwop3UzaMYoaD0FN9ukbaUu5ddZofAmoR")
+							.then((response) => response.json())
+							.then((data) => {
+								const apodElement = document.getElementById("apod");
+								apodElement.innerHTML = `<h3>${data.title}</h3><img src="${data.url}" alt="${data.title}" class="img-fluid"><br />&nbsp;<br /><p>${data.explanation}</p>`;
+							})
+							.catch((error) => console.error("Error:", error));
+					</script>
 				</div>
 			</div>
 			<br />
